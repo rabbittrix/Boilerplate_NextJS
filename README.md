@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+# Boilerplate
+
+git add .
+git commit -m "add husky and lint-staged"
+
 First, run the development server:
 
 ```bash
