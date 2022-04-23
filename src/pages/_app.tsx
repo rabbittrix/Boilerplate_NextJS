@@ -7,8 +7,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Wella Company - Boilerplate</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <link rel="shortcut icon" href="/img/wellaLogo.png" />
+        <link rel="apple-touch-icon" href="/img/wellaLogo.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta
+          name="theme-color"
+          content="-webkit-linear-gradient #06092b, #cccccc"
+        />
         <meta
           name="description"
           content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
