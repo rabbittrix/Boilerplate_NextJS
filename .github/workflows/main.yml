@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: develop
-      url: 'sysfactoring.com'
     needs: build
     steps:
       - name: Run a one-line script
@@ -23,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: hmg
-      url: 'sysfactoring.com'
     needs: deploy-dev
     steps:
       - name: Run a one-line script
@@ -33,7 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: hmg
-      url: 'sysfactoring.com'
     needs: deploy-hmg
     steps:
       - name: Run a one-line script
