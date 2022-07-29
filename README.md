@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-# Boilerplate Wella Company
+# Boilerplate
 
 First, run the development server:
 
