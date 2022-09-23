@@ -1,7 +1,7 @@
 import * as S from './styles'
 
 const Main = () => (
-  <S.Wrapper>
+  <>
     <S.Logo
       src="/img/wellaLogo.png"
       alt="Wella logo with the description Wella Company on the side."
@@ -12,7 +12,7 @@ const Main = () => (
       src="/img/hero-illustration.svg"
       alt="A developer facing a screen with code."
     />
-  </S.Wrapper>
+  </>
 )
 
 export default Main
