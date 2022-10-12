@@ -6,9 +6,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Wella Company - Boilerplate</title>
-        <link rel="shortcut icon" href="/img/wellaLogo.png" />
-        <link rel="apple-touch-icon" href="/img/wellaLogo.png" />
+        <title>NowDocs</title>
+        <link rel="shortcut icon" href="/img/icon-512x512.png" />
+        <link rel="apple-touch-icon" href="/img/icon-512x512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta
           name="theme-color"
