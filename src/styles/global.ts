@@ -44,10 +44,12 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, #__next{
     height: 100%;
+    background-color: #1b41aa;
   }
 
   body {
     font-family: -apple-system, SpaceGrotesk-Regular, 'Open Sans', sans-serif
+
   }
 
   strong {
@@ -115,6 +117,26 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     width: auto%;
     flex-grow: 10;
+  }
+
+  .text-title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .text-small{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .text-green{
+    color: #1BAA84;
+  }
+
+  .text-blue{
+    color: #1B41AA;
   }
 `
 export default GlobalStyles
