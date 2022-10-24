@@ -16,8 +16,33 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue' sans-serif
+    font-family: -apple-system, Space Grotesk, Monument Extended, 'Open Sans', sans-serif;
+    background-color: #1B41AA;
+    background-image: url("img/gradientOverlay.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url('/fonts/SpaceGrotesk.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  font-face {
+    font-family: "Monument Extended";
+    src: url('/fonts/MonumentExtended-Regular.otf');
+  }
+
+  p {
+    font-size: 16px;
   }
 `
 export default GlobalStyles
