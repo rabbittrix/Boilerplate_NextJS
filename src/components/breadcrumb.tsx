@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import { AppProps } from 'next/dist/shared/lib/router/router'
 
 // I created Breadcrumb component but I need to complete it
 
@@ -28,7 +29,7 @@ const Breadcrumb = (props: AppProps) => {
       >
         {/* <Icon name={'home'} className='text-gray-300' size={16} /> */}
       </span>
-      {bread.map((item, index) => {
+      {bread.map((item: any, index: number) => {
         return (
           <span
             key={`breadCrump_${item}_${index}`}
