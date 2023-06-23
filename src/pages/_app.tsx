@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import GlobalStyles from 'styles/global'
+import Layout from '../components/layout'
+import { DataProvider } from '../context/data'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +22,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <DataProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </DataProvider>
     </>
   )
 }
