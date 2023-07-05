@@ -19,5 +19,15 @@ const GlobalStyles = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue' sans-serif
   }
+  table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+    padding: 0;
+    border-spacing: 0;
+}
 `
 export default GlobalStyles

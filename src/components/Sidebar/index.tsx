@@ -1,38 +1,38 @@
 import * as S from './styles'
 
 import {
-  FolderPlus,
-  FolderSimpleMinus,
   House,
-  Users,
-  File
+  DotsNine,
+  Handshake,
+  BookBookmark,
+  Gear
 } from 'phosphor-react'
 
-export function Sidebar() {
-  return (
-    <S.Sidebar>
-      <div>
-        <label className="icons">
-          <House size={26} alt={'Home'} color="#FFFFFF" />
-          <span>Home</span>
-        </label>
-        <label className="icons">
-          <FolderPlus size={26} alt={'submit'} color="#FFFFFF" />
-          <span>Submit</span>
-        </label>
-        <label className="icons active">
-          <File size={26} color="#FFFFFF" />
-          <span>Docs</span>
-        </label>
-        <label className="icons">
-          <Users size={26} alt={'Entities'} color="#FFFFFF" />
-          <span>Entities</span>
-        </label>
-        <label>
-          <FolderSimpleMinus size={26} alt={'Nowsapce'} color="#FFFFFF" />
-          <span>NowSpace</span>
-        </label>
-      </div>
-    </S.Sidebar>
-  )
-}
+const Sidebar = () => (
+  <S.Sidebar>
+    <div>
+      <label className="icons">
+        <DotsNine size={28} color="#fafafa" weight="bold" />
+        <span>Apps</span>
+      </label>
+      <label className="icons active">
+        <House size={28} alt={'Home'} color="#FFFFFF" weight="fill" />
+        <span>Home</span>
+      </label>
+      <label className="icons">
+        <Handshake size={28} color="#FFFFFF" />
+        <span>Deals</span>
+      </label>
+      <label className="icons">
+        <BookBookmark size={28} color="#ffffff" />
+        <span>Workbook</span>
+      </label>
+      <label className="icons">
+        <Gear size={28} color="#ffffff" />
+        <span>Utilities</span>
+      </label>
+    </div>
+  </S.Sidebar>
+)
+
+export default Sidebar
