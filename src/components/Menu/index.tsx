@@ -1,5 +1,6 @@
 import MenuItem, { MenuItemType } from 'components/MenuItem'
 import * as S from './styles'
+import Avatar, { AvatarType } from 'components/Avatar'
 
 const items: MenuItemType[] = [
   {
@@ -11,9 +12,15 @@ const items: MenuItemType[] = [
   }
 ]
 
+const avatar: AvatarType = {
+  name: 'Robert Koller',
+  photo: '/photo.svg'
+}
+
 const Menu = () => (
   <S.Wrapper>
     {items.map((item) => <MenuItem {...item} />)}
+    <Avatar {...avatar} />
   </S.Wrapper>
 )
 
